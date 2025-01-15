@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
   /* width: 1800px; */
   height: 90vh;
   width: 100vw;
@@ -39,14 +39,57 @@ h1 {
   height: 742px;
 }
 
+.col-left {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+
+.location-bubble {
+  background-color: #ff007a;
+  height: 92px;
+  width: 483px;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  border-radius: 14px;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: white;
+  margin: 16px;
+}
+
+.location-name {
+  font-weight: 600;
+}
+
+.location-address {
+  opacity: 80%;
+}
+
+.triangle {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -30%); /* Centers the element */
+  /* margin-top: 10px; */
+}
+
+.location-dot {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -20%); /* Centers the element */
+}
+
 .col-right {
   background-color: green;
   width: 565px;
   height: 742px;
-}
-
-.col-left {
-  background-color: blue;
 }
 
 .contact-form {
