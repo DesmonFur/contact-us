@@ -13,12 +13,19 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   /* background-color: red; */
   /* width: 1800px; */
   height: 90vh;
   width: 100vw;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
 }
 
 h1 {
@@ -28,8 +35,9 @@ h1 {
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 33.6px;
+  color: white;
 }
 
 .col-left,
@@ -92,6 +100,7 @@ h1 {
   width: 565px;
   height: 742px;
   position: relative;
+  margin-top: 40px;
 }
 
 .contact-form {
