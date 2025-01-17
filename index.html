@@ -69,20 +69,43 @@
           <form action="submit" class="col-form">
             <p>Send Us a Message</p>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+            <input
+              class="styled-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
             <label for="name">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              class="styled-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
             <label for="phone">phone</label>
-            <input type="tel" id="phone" name="phone" required />
-            <label for="contact-pref"
+            <input
+              class="styled-input"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="Phone"
+            />
+            <label for="contact-pref" class="contact-pref"
               >Preferred contact method of communication</label
             >
-            <label>
-              <input type="radio" name="contact_pref" value="email" /> Email
-            </label>
-            <label>
-              <input type="radio" name="contact_pref" value="phone" /> Phone
-            </label>
+            <div class="contact-pref-container">
+              <label class="contact-radio">
+                <input type="radio" name="contact_pref" value="email" /> Email
+              </label>
+              <label class="contact-radio">
+                <input type="radio" name="contact_pref" value="phone" /> Phone
+              </label>
+            </div>
             <label for="myMessage">Message:</label><br />
             <textarea
               name="message"
